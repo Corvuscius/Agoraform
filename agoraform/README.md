@@ -52,6 +52,21 @@ Un champ masqué n'est **jamais obligatoire ni enregistré** (colonne vide), mê
 si un champ dont on dépend est lui-même masqué, le champ suivant l'est aussi.
 L'affichage dynamique utilise un peu de JavaScript ; sans lui, tous les champs sont visibles mais le serveur applique les mêmes règles.
 
+## Plusieurs événements = plusieurs formulaires
+Un formulaire = un descripteur `forms/<id>.csv` = un fichier de saisie `data/<id>.csv` = une URL :
+`https://votre-site/agoraform/?f=<id>` (ajouter `&lang=en` pour l'anglais). Pour un nouvel événement,
+il suffit de déposer un nouveau descripteur : aucune configuration à modifier.
+
+Exemples fournis, chacun avec ses propres champs, son URL et ses données fictives :
+
+| événement | descripteur | URL | saisies |
+|-----------|-------------|-----|---------|
+| Réunion du 01/02/2027 | `forms/reunion-2027-02-01.csv` | `?f=reunion-2027-02-01` | `data/reunion-2027-02-01.csv` |
+| Apéro du 05/06/2026 | `forms/apero-2026-06-05.csv` | `?f=apero-2026-06-05` | `data/apero-2026-06-05.csv` |
+| Rassemblement (tableau « Inscription générique ») | `forms/inscription.csv` | `?f=inscription` | `data/inscription.csv` |
+
+Les fichiers `data/*.csv` fournis ne contiennent que des données inventées : à supprimer avant la mise en production.
+
 ## Identifiant de saisie
 Aucune authentification : chaque réponse enregistrée reçoit un **identifiant unique et aléatoire**
 (`XXXX-XXXX-XXXX`, 60 bits, alphabet sans caractères ambigus), écrit dans la colonne `id` du CSV
@@ -61,10 +76,9 @@ Colonnes du fichier de saisie : `id;date;lang;<champs…>` (UTF-8 avec BOM, sép
 Si vous modifiez les champs d'un formulaire déjà utilisé, l'ancien fichier est archivé (`<id>.AAAAMMJJHHMMSS.csv`)
 et un nouveau démarre avec les nouvelles colonnes.
 
-## Exemple fourni
+## Exemple « Inscription générique »
 `forms/inscription.csv` reprend la structure du tableau « Inscription générique » (profil, nom, contact,
-arrivée, repas, stand, RGPD, commentaires) avec ses champs conditionnels ; `data/inscription.csv` contient une ligne de saisie fictive.
-Supprimez-la avant la mise en production.
+arrivée, repas, stand, RGPD, commentaires) avec ses champs conditionnels.
 
 ## Sécurité
 - Dossier privé hors racine web, vérifié au démarrage.

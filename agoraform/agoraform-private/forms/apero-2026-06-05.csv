@@ -1,0 +1,9 @@
+name;type;required;visible_if;label_fr;label_en;options_fr;options_en
+;title;;;Apéro de fin d'année du 5 juin 2026;End-of-year drinks on 5 June 2026;;
+;intro;;;Inscrivez-vous pour que l'on prévoie assez de quoi grignoter !;Sign up so that we can plan enough snacks!;;
+nom;text;1;;Votre prénom;Your first name;;
+accompagne;radio;1;;Venez-vous accompagné(e) ?;Are you bringing a guest?;Oui|Non;Yes|No
+invites;text;1;accompagne=Oui;Prénom(s) de la ou des personnes qui vous accompagnent;First name(s) of your guest(s);;
+boissons;checkbox;0;;Vos boissons préférées;Your favourite drinks;Sans alcool|Vin|Bière|Cocktail;Soft drinks|Wine|Beer|Cocktail
+apport;radio;1;;Je peux apporter :;I can bring:;Du salé|Du sucré|Des boissons|Rien cette fois;Savoury food|Sweet food|Drinks|Nothing this time
+photos;checkbox;0;;J'accepte d'apparaître sur les photos partagées après l'événement;I agree to appear in photos shared after the event;;

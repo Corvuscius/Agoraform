@@ -1,0 +1,11 @@
+name;type;required;visible_if;label_fr;label_en;options_fr;options_en
+;title;;;Réunion d'équipe du 1er février 2027;Team meeting of 1 February 2027;;
+;intro;;;Merci de confirmer votre présence et de préciser vos besoins.;Please confirm your attendance and tell us about your needs.;;
+nom;text;1;;Nom et prénom;Full name;;
+service;radio;1;;Votre service;Your department;Direction|Production|Technique|Administration;Management|Production|Engineering|Administration
+mode;radio;1;;Mode de participation;How will you attend?;Sur place|En visioconférence;On site|By video call
+dejeuner;radio;1;mode=Sur place;Déjeuner sur place ?;Lunch on site?;Oui|Non;Yes|No
+regime;checkbox;0;dejeuner=Oui;Régimes alimentaires particuliers;Dietary requirements;Végétarien|Sans gluten|Sans porc;Vegetarian|Gluten-free|No pork
+lien;text;1;mode=En visioconférence;Adresse e-mail pour recevoir le lien de connexion;E-mail address to receive the connection link;;
+sujets;checkbox;0;;Sujets que vous souhaitez aborder;Topics you would like to discuss;Budget 2027|Planning des chantiers|Sécurité|Recrutements;2027 budget|Site planning|Safety|Recruitment
+question;textarea;0;;Une question à poser à l'avance ?;A question to ask in advance?;;
