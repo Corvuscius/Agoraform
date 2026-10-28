@@ -1,0 +1,13 @@
+name;type;required;visible_if;label_fr;label_en;options_fr;options_en
+;title;;;Inscription au rassemblement;Event registration;;
+;intro;;;Merci de remplir ce formulaire pour participer.;Please fill in this form to take part.;;
+profil;radio;1;;Je suis :;I am:;Intervenant|Collectif / association|Média|Bénévole;Speaker|Collective / association|Media|Volunteer
+nom_structure;text;1;profil=Collectif / association|Média;Nom du collectif / association / média;Name of the collective / association / media;;
+presents;text;1;profil=Collectif / association|Média;Nom(s) et prénom(s) de la (des) personne(s) présente(s) au nom du collectif / association / média;Name(s) of the person(s) attending on behalf of the collective / association / media;;
+nom_personne;text;1;profil=Intervenant|Bénévole;Nom et prénom de l'intervenant / du bénévole;Full name of the speaker / volunteer;;
+contact;text;1;;Téléphone et / ou adresse mail de la personne à contacter en cas de besoin;Phone and / or e-mail of the person to contact if needed;;
+arrivee;checkbox;1;;L'arrivée est programmée pour :;Arrival is planned for:;Vendredi après-midi|Vendredi soir|Samedi matin|Dimanche matin;Friday afternoon|Friday evening|Saturday morning|Sunday morning
+repas;radio;1;arrivee=Vendredi après-midi|Vendredi soir;Serez-vous présent le vendredi soir pour 1 repas partagé ?;Will you attend the shared dinner on Friday evening?;Oui|Non;Yes|No
+stand;radio;1;profil!=Bénévole;Souhaitez-vous un stand ?;Would you like a stand?;Oui|Non;Yes|No
+rgpd;radio;1;;Autorisation RGPD;GDPR consent;Oui|Non;Yes|No
+commentaire;textarea;0;;Suggestions ou commentaires :;Suggestions or comments:;;

@@ -1,0 +1,23 @@
+<?php
+return [
+    'app_name'      => 'Agoraform',
+    'choose_form'   => 'Choose a form',
+    'no_forms'      => 'No form available at the moment.',
+    'required_note' => '* required field',
+    'submit'        => 'Submit',
+    'thanks_title'  => 'Thank you!',
+    'thanks_msg'    => 'Your answer has been recorded.',
+    'fill_again'    => 'Fill in again',
+    'back_to_list'  => 'Back to the list',
+    'notfound'      => 'Form not found.',
+    'save_error'    => 'Your answer could not be saved. Please try again later.',
+    'form_error'    => 'This form is misconfigured.',
+    'err_summary'   => 'Please fix the highlighted fields.',
+    'err_required'  => 'This field is required.',
+    'err_invalid'   => 'Invalid value.',
+    'err_too_long'  => 'Answer too long.',
+    'err_csrf'      => 'Session expired, please submit the form again.',
+    'your_id'       => 'Your submission ID',
+    'keep_id'       => "Keep it: it identifies your answer (no account is needed).",
+    'language'      => 'Language',
+];

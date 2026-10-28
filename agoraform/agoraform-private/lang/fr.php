@@ -1,0 +1,23 @@
+<?php
+return [
+    'app_name'      => 'Agoraform',
+    'choose_form'   => 'Choisissez un formulaire',
+    'no_forms'      => 'Aucun formulaire disponible pour le moment.',
+    'required_note' => '* champ obligatoire',
+    'submit'        => 'Envoyer',
+    'thanks_title'  => 'Merci !',
+    'thanks_msg'    => 'Votre réponse a bien été enregistrée.',
+    'fill_again'    => 'Remplir à nouveau',
+    'back_to_list'  => 'Retour à la liste',
+    'notfound'      => 'Formulaire introuvable.',
+    'save_error'    => "Votre réponse n'a pas pu être enregistrée. Merci de réessayer plus tard.",
+    'form_error'    => "Ce formulaire est mal configuré.",
+    'err_summary'   => 'Merci de corriger les champs signalés.',
+    'err_required'  => 'Ce champ est obligatoire.',
+    'err_invalid'   => 'Valeur invalide.',
+    'err_too_long'  => 'Réponse trop longue.',
+    'err_csrf'      => 'Session expirée, merci de renvoyer le formulaire.',
+    'your_id'       => 'Votre identifiant de saisie',
+    'keep_id'       => "Conservez-le : il identifie votre réponse (aucun compte n'est nécessaire).",
+    'language'      => 'Langue',
+];
